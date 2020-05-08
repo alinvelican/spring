@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+      http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+
+
+
+
+
+
+
+
+    <bean id="emailService" class="com.EmailService">
+        <constructor-arg ref="checker" />
+    </bean>
+
+    <!--    <bean id="emailservice2" class="com.EmailService">-->
+    <!--        <constructor-arg ref="checker2" />-->
+    <!--    </bean>-->
+
+
+    <bean id="checker" class="com.EnglishChecker">
+
+    </bean>
+
+    <!--    <bean id="checker2" class="com.FrenchChecker">-->
+
+    <!--    </bean>-->
+
+
+</beans>
